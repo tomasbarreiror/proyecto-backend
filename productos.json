@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Teclado",
+    "description": "Razer Hunstman TE - Switches Red",
+    "price": 79.99,
+    "thumbnail": "img/teclado_razer.webp",
+    "code": "P01",
+    "stock": 30
+  },
+  {
+    "id": 2,
+    "title": "Mouse",
+    "description": "Razer Viper Mini - Switches Red",
+    "price": 49.99,
+    "thumbnail": "img/mouse_razer.webp",
+    "code": "P02",
+    "stock": 33
+  }
+]
