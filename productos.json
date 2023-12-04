@@ -1,20 +1,640 @@
 [
   {
-    "id": 1,
-    "title": "Teclado",
-    "description": "Razer Hunstman TE - Switches Red",
-    "price": 79.99,
-    "thumbnail": "img/teclado_razer.webp",
-    "code": "P01",
-    "stock": 30
+      "id": 1,
+      "title": "Lenovo IdeaPad 3i 6ta Gen (15.6', Intel)", 
+      "price": 499.00,
+      "stock": 4, 
+      "thumbail": "img/nb_lenovo.webp",
+      "description": "notebook"
   },
+  
   {
-    "id": 2,
-    "title": "Mouse",
-    "description": "Razer Viper Mini - Switches Red",
-    "price": 49.99,
-    "thumbnail": "img/mouse_razer.webp",
-    "code": "P02",
-    "stock": 33
+      "id": 2,
+      "title": "Dell Inspiron 3511 5ta Gen (15.6', Intel)",
+      "price": 556.00, 
+      "stock": 6,
+      "thumbail": "img/nb_dell.webp",
+      "description":"notebook"
+  },
+  
+  {
+      "id": 3,
+      "title": "Asus Vivobook Pro 16 (16', Intel)",    
+      "price": 1299.00,
+      "stock": 5,
+      "thumbail": "img/nb_asus.webp",
+      "description": "notebook"
+  },
+  
+  {
+      "id": 4,
+      "title": "AMD Ryzen 5 5600",    
+      "price": 145.00,
+      "stock": 15,
+      "thumbail": "img/ryzen5_2da.webp",
+      "description": "procesador-amd"
+  },
+  
+  {
+      "id": 5,
+      "title": "Intel Core I5 12400f",    
+      "price": 149.00,
+      "stock": 15,
+      "thumbail": "img/i5_12th.webp",
+      "description": "procesador-intel"
+  },
+  
+  {
+      "id": 6,
+      "title": "AMD Ryzen 5 5600X",  
+      "price": 157.00,
+      "stock": 12,
+      "thumbail": "img/ryzen5_2da.webp", 
+      "description":  "procesador-amd"
+  },
+  
+  {
+      "id": 7,
+      "title": "Intel Core I5 12-600k", 
+      "price": 178.00,
+      "stock":  11,
+      "thumbail":  "img/i5_12th.webp",
+      "description":  "procesador-intel"
+  },
+  
+  {
+      "id": 8,
+      "title": "AMD Ryzen 7 5700X",  
+      "price": 191.00,
+      "stock":  7,
+      "thumbail": "img/ryzen7_3ra.webp",
+      "description":  "procesador-amd"
+  },
+  
+  {
+      "id": 9,  
+      "title": "AMD Ryzen 7 5800X",  
+      "price": 210,
+      "stock": 6,
+      "thumbail":  "img/ryzen7_3ra.webp",
+      "description":  "procesador-amd"
+  },
+  
+  {
+      "id": 10,
+      "title": "Intel Core I7 12-600K",  
+      "price": 274.00,
+      "stock":  6,
+      "thumbail": "img/i7_12th.webp",
+      "description":  "procesador-intel"
+  },
+  
+  {
+      "id": 11, 
+      "title": "Intel Core I7 12-700KF", 
+      "price": 288.00,
+      "stock": 5,
+      "thumbail": "img/i7_12th.webp", 
+      "description": "procesador-intel"
+  },
+  
+  {
+      "id": 12,
+      "title": "AMD Ryzen 9 5900X", 
+      "price": 319.00,
+      "stock":  4,
+      "thumbail": "img/ryzen9_3ra.webp",
+      "description":  "procesador-amd"
+  },
+  
+  {
+      "id": 13,
+      "title": "Intel Core I9 12-900K",  
+      "price": 320.00,
+      "stock":  3,
+      "thumbail": "img/i9_12th.webp", 
+      "description": "procesador-intel"
+  },
+  
+  {
+      "id": 14,
+      "title": "AMD Ryzen 9 5950X",  
+      "price": 448.00,
+      "stock": 3,
+      "thumbail": "img/ryzen9_3ra.webp",
+      "description":  "procesador-amd"
+  },
+  
+  {
+      "id": 15,
+      "title": "Intel Core I9 12-900KS",   
+      "price": 349.00,
+      "stock": 2, 
+      "thumbail": "img/i9_12th.webp",
+      "description": "procesador-intel"
+  },
+  
+  {
+      "id": 16,
+      "title": "Mother Asus Prime A520M-K",   
+      "price": 65.00,
+      "stock": 12,
+      "thumbail": "img/a520.webp",
+      "description": "mother-amd"
+  },
+  
+  {
+      "id": 17,
+      "title": "Mother Asus Prime H410M-E",   
+      "price": 66.00,
+      "stock":  8,
+      "thumbail": "img/h410.webp",
+      "description": "mother-intel"
+  },
+  
+  {
+      "id": 18,   
+      "title": "Mother Gigabyte B450 DS3H",
+      "price": 70.00,
+      "stock": 9,
+      "thumbail":  "img/b450.webp",
+      "description":  "mother-amd"
+  },
+  
+  {
+      "id": 19,
+      "title": "Mother Gigabyte A620M S2H", 
+      "price": 80.00,
+      "stock": 15,
+      "thumbail": "img/a620.webp",
+      "description": "mother-amd"
+  },
+  
+  {
+      "id": 20,
+      "title": "Mother Gigabyte H510M H",  
+      "price": 83.00, 
+      "stock": 13,
+      "thumbail":  "img/h510.webp",
+      "description": "mother-intel"
+  },
+  
+  {
+      "id": 21,
+      "title": "Mother Asrock H610M-HDV", 
+      "price": 103.00,
+      "stock": 10,
+      "thumbail": "img/h610.webp", 
+      "description": "mother-intel"
+  },
+  
+  {
+      "id": 22,
+      "title": "Mother Gigabyte B550 Aorus Elite V2",   
+      "price": 120.00,
+      "stock": 6,
+      "thumbail": "img/b550.webp",
+      "description": "mother-amd"
+  },
+  
+  {
+      "id": 23,
+      "title": "Mother Gigabyte B660 Gaming X DDR4",
+      "price": 129.00,
+      "stock":  5,
+      "thumbail": "img/b660.webp",
+      "description": "mother-intel"
+  },
+  
+  {
+      "id": 24,
+      "title": "Mother MSI Mag B760 Tomahawk",
+      "price": 169.00,
+      "stock": 4, 
+      "thumbail": "img/b760.webp",
+      "description": "mother-intel"
+  },
+  
+  {
+      "id": 25,
+      "title": "Mother Gigabyte B650 Aorus Elite AX",   
+      "price": 199.00,
+      "stock":  3,
+      "thumbail": "img/b650.webp",
+      "description": "mother-amd"
+  },
+  
+  {
+      "id": 26,
+      "title": "Mother Asus Prime X670-P AuraSync",   
+      "price": 259.00,
+      "stock":  3,
+      "thumbail": "img/x670.webp",
+      "description": "mother-amd"
+  },
+  
+  {
+      "id": 27,
+      "title": "Mother Asus Prime Z790-P AuraSync",
+      "price":  269.00,
+      "stock": 4,
+      "thumbail": "img/z790.webp",
+      "description": "mother-intel"
+  },
+  
+  {
+      "id": 28,
+      "title": "MSI Armor AMD Radeon 580 8gb",   
+      "price": 139.00, 
+      "stock": 14,
+      "thumbail": "img/rx580.webp",
+      "description": "placas"
+  },
+  
+  {
+      "id": 29,
+      "title": "MSI Gamingo X GTX 1650 4gb",  
+      "price": 154.00,
+      "stock": 13,
+      "thumbail": "img/gtx1650.webp",
+      "description":  "placas"
+  },
+  
+  {
+      "id": 30,
+      "title": "Gigabyte GTX 1660 Ti 6gb",    
+      "price": 227,
+      "stock": 17,
+      "thumbail": "img/gtx1660ti.webp",
+      "description": "placas"
+  },
+  
+  {
+      "id": 31,
+      "title": "MSI Gaming X AMD Radeon RX 6650 XT 8gb", 
+      "price": 249.00,
+      "stock": 10,
+      "thumbail": "img/rx6650xt.webp", 
+      "description":  "placas"
+  },
+  
+  {
+      "id": 32,
+      "title": "Gigabyte AMD Radeon RX 7600 8gb",
+      "price": 269.00,
+      "stock": 9,
+      "thumbail": "img/rx7600.webp",
+      "description": "placas"
+  },
+  
+  {
+      "id": 33,
+      "title": "MSI Gaming Trio AMD Radeon RX 6800 16gb",
+      "price": 429.00,
+      "stock": 9,
+      "thumbail": "img/rx6800.webp",
+      "description": "placas"
+  },
+  
+  {
+      "id":34,
+      "title": "Asus TUF Gaming RTX 3070 Ti 8gb",    
+      "price": 531.00,
+      "stock": 8, 
+      "thumbail": "img/rtx3070ti.webp",
+      "description": "placas"
+  },
+  
+  {
+      "id": 35,
+      "title": "Asus TUF Gaming AMD RX 7900 XT 20gb",   
+      "price": 999.00,
+      "stock":  5,
+      "thumbail": "img/rx7900xt.webp",
+      "description": "placas"
+  },
+  
+  {
+      "id": 36,
+      "title": "MSI Gaming Trio X RTX 4080 16gb",  
+      "price":  1171.00,
+      "stock": 5,
+      "thumbail": "img/rtx4080.webp",
+      "description":  "placas"
+  },
+  
+  {
+      "id": 37,
+      "title": "Asus ROG Strix Gaming RTX 4090 24gb",  
+      "price": 1989.00,
+      "stock":  3, 
+      "thumbail": "img/rtx4090.webp",
+      "description": "placas"
+  },
+  
+  {
+      "id": 38,
+      "title": "Redragon Kumara K552 RGB - Switches Blue",
+      "price": 50.00,
+      "stock": 10,
+      "thumbail": "img/kumara.webp",
+      "description": "teclado"
+  },
+  
+  {
+      "id": 39,
+      "title": "Hyperx Alloy FPS Pro - Switches Red",   
+      "price": 65.00,
+      "stock": 12,
+      "thumbail":  "img/alloy_fps.webp",
+      "description": "teclado"
+  },
+  
+  {
+      "id": 40,
+      "title": "Hyperx Alloy Origins 60% - Lineal Red ",
+      "price":  81.00, 
+      "stock": 12, 
+      "thumbail": "img/alloy_origins.webp",
+      "description":  "teclado"
+  },
+  
+  {
+      "id": 41,
+      "title": "Logitech G PRO - GX Blue Clicky ", 
+      "price": 99.00,
+      "stock": 11,
+      "thumbail": "img/t_gpro.webp",
+      "description": "teclado"
+  },
+  
+  {
+      "id": 42,
+      "title": "Razer Huntsman Tournament Edition - Optical Red", 
+      "price": 109.00, 
+      "stock": 10,
+      "thumbail":  "img/huntsman.webp",
+      "description":  "teclado"
+  },
+  
+  {
+      "id": 43,
+      "title": "Redragon Cobra M711",    
+      "price": 17.00,
+      "stock": 20,
+      "thumbail": "img/cobra.webp",
+      "description": "mouse"
+  },
+  
+  {
+      "id": 44,
+      "title": "Logitech G203 - Black",  
+      "price": 27.00,
+      "stock":  19,
+      "thumbail":  "img/g203.webp",
+      "description": "mouse"
+  },
+  
+  {
+      "id": 45,
+      "title": "Razer Viper Mini",   
+      "price": 49.00,
+      "stock": 15,
+      "thumbail": "img/viper.webp",
+      "description":  "mouse"
+  },
+  
+  {
+      "id": 46,
+      "title": "Glorious Model O - Black", 
+      "price": 56.00,
+      "stock": 10,
+      "thumbail": "img/modelO.webp",
+      "description": "mouse"
+  },
+  
+  {
+      "id": 47,
+      "title": "Logitech G Pro X Wireless",    
+      "price": 99.00,
+      "stock": 5,
+      "thumbail": "img/gpro_wireless.webp",
+      "description": "mouse"
+  },
+  
+  {
+      "id":48,
+      "title": "Redragon Zeus H710 - Black",    
+      "price": 45.00,
+      "stock": 16,
+      "thumbail": "img/zeus.webp",
+      "description": "auriculares"
+  },
+  
+  {
+      "id": 49,
+      "title": "Razer Kraken - Black",   
+      "price": 54.00,
+      "stock": 11,
+      "thumbail":  "img/kraken.webp",
+      "description": "auriculares"
+  },
+  
+  {
+      "id": 50,
+      "title": "Logitech G Series G533 Wireless", 
+      "price": 103.00,
+      "stock": 8, 
+      "thumbail":  "img/g553.webp",
+      "description":  "auriculares"
+  },
+  
+  {
+      "id": 51,
+      "title": "HyperX Cloud Flight Wireless",
+      "price": 139.00,
+      "stock":  8, 
+      "thumbail": "img/cloudf.webp", 
+      "description": "auriculares"
+  },
+  
+  {
+      "id": 52,
+      "title":"Logitech Astro A50 Wireless",    
+      "price": 275.00,
+      "stock": 6,
+      "thumbail": "img/a50.webp",
+      "description": "auriculares"
+  },
+  
+  {
+      "id": 53,
+      "title": "Redragon Mousepad Kunlun K006",   
+      "price": 18.00,
+      "stock":  19,
+      "thumbail": "img/kunlun.webp",
+      "description": "pad"
+  },
+  
+  {
+      "id": 54,
+      "title": "Hyperx Fury S Large",    
+      "price": 20.00,
+      "stock": 15,
+      "thumbail": "img/pad_hyperx.webp",
+      "description": "pad"
+  },
+  
+  {
+      "id": 55,
+      "title": "The Mousepad Companmy - Strata Liquid", 
+      "price": 35.00,
+      "stock": 17,
+      "thumbail": "img/mousepadcompany.webp",
+      "description": "pad"
+  },
+  
+  {
+      "id": 56,
+      "title": "Logitech G640 C9 Edition",
+      "price": 50.00,
+      "stock":  9, 
+      "thumbail": "img/pad_c9.webp",
+      "description": "pad"
+  },
+  
+  {
+      "id": 57,
+      "title": "Glorious Mousepad XXXL",
+      "price": 55.00,
+      "stock": 7,
+      "thumbail": "img/gloriousxxxl.webp",
+      "description":  "pad"
+  },
+  
+  {
+      "id": 58,
+      "title": "Microfono Fifine K730",  
+      "price": 30.00,
+      "stock": 12, 
+      "thumbail":  "img/k730.webp",
+      "description": "cam-mic"
+  },
+  
+  {
+      "id": 59,
+      "title": "Camara Webcam Logitech C920 Pro S",
+      "price": 65.00,
+      "stock": 10,
+      "thumbail":  "img/c920.webp", 
+      "description": "cam-mic"
+  },
+  
+  {
+      "id": 60,
+      "title": "Microfono Hyperx Quadcast - Red",
+      "price": 147.00,
+      "stock": 12,
+      "thumbail": "img/quadcast.webp",
+      "description": "cam-mic"
+  },
+  
+  {
+      "id": 61,
+      "title": "Camara Webcam Logitech Brio",
+      "price":  191.00,
+      "stock": 12, 
+      "thumbail": "img/brio.webp",
+      "description": "cam-mic"
+  },
+  
+  {
+      "id": 62,
+      "title": "Microfono Shure SM7B",
+      "price":  399.00, 
+      "stock": 12,
+      "thumbail": "img/shure.webp", 
+      "description": "cam-mic"
+  },
+
+  {
+    "id": 62,
+    "title": "Microfono Shure SM7B",
+    "price":  399.00, 
+    "stock": 12,
+    "thumbail": "img/shure.webp", 
+    "description": "cam-mic"
+  },
+
+  {
+    "id": 63,
+    "title": "Fuente Cooler Master 800W Plus Gold",
+    "price":  60.00, 
+    "stock": 5,
+    "thumbail": "img/fuente_3.webp", 
+    "description": "fuente"
+  },
+
+  {
+    "id": 64,
+    "title": "Gabinete MSI MAG Forge M100A RGB",
+    "price":  57.00, 
+    "stock": 10,
+    "thumbail": "img/gabinete_3.webp", 
+    "description": "gabinete"
+  },
+
+  {
+    "id": 65,
+    "title": "Fuente EVGA 600W 80 Plus Bronze",
+    "price":  30.00, 
+    "stock": 8,
+    "thumbail": "img/fuente_2.webp", 
+    "description": "fuente"
+  },
+
+  {
+    "id": 66,
+    "title": "Memoria RAM Kingston 8GB DDR4 3200Mhz",
+    "price":  40.00, 
+    "stock": 20,
+    "thumbail": "img/ram_8gb.webp", 
+    "description": "ram"
+  },
+
+  {
+    "id": 67,
+    "title": "Gabinete Redragon GC-606B Wheeljack TG RGB",
+    "price":  44.00, 
+    "stock": 8,
+    "thumbail": "img/gabinete_2.webp", 
+    "description": "gabinete"
+  },
+
+  {
+    "id": 68,
+    "title": "Gabinete SuperPower Loulan RGB CG-9900-C",
+    "price":  39.00, 
+    "stock": 14,
+    "thumbail": "img/gabinete_1.webp", 
+    "description": "gabinete"
+  },
+
+  {
+    "id": 69,
+    "title": "Fuente Gigabyte 450W 80 Plus Bronze",
+    "price":  20.00, 
+    "stock": 20,
+    "thumbail": "img/fuente_1.webp", 
+    "description": "fuente"
+  },
+
+  {
+    "id": 70,
+    "title": "Gabinete Lian Li Lancool 205 Black 2x120mm",
+    "price":  60.00, 
+    "stock": 7,
+    "thumbail": "img/gabinete_4.webp", 
+    "description": "gabinete"
   }
 ]
