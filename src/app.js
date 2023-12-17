@@ -8,13 +8,10 @@ let productos = []
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
-app.get("/", (req, res) => {
-    res.send("hola mundo")
-});
 
 app.use("/api/products", productRouter)
 app.use("/api/cart", cartRouter)
 
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en el puerto ${PORT}`)
-});
+})
