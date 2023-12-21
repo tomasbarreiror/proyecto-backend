@@ -1,4 +1,5 @@
 import fs from 'fs'
+
 import { fileURLToPath } from 'url'
 import { dirname } from 'path'
 
@@ -7,11 +8,12 @@ export const __dirname = dirname(__filename)
 
 async function readFile(file) {
     try {
-        let result = await fs.promises.readFile(__dirname + "/" + file, "utf-8")
-        let data = await JSON.parse(result)
-        return data
-    } catch (error) {
-        console.error(error)
+        let readfilename = __dirname + "/" + file;
+        let result = await fs.promises.readFile(__dirname + "/" + file, "utf-8");
+        let data = await JSON.parse(result);
+        return data;
+    } catch (err) {
+        console.log(err);
     }
 }
 
