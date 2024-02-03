@@ -3,11 +3,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{title}}</title>
+    <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href={{style}} />
   </head>
   
   <body>
-    {{{body}}}
-  </body>
+    <header>
+      <picture>
+        <img src="/img/logo.png" alt="">
+      </picture>
 
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/products">Products</a></li>
+          <li><a href="/realtimeproducts">Real Time Products</a></li>
+          <li><a href="/chat">Chat</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    {{{body}}}
+
+  </body>
+  <script src="/socket.io/socket.io.js"></script>
 </html>

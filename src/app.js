@@ -1,70 +1,52 @@
 import express from "express";
-import { Server } from "socket.io";
-import productRouter from "./routes/products.router.js";
-import cartRouter from "./routes/cart.router.js";
+import mongoose from "mongoose";
+import dotenv from "dotenv"
 import handlebars from "express-handlebars";
-import viewsRouter from "./routes/views.router.js";
-import { __dirname } from "./utils.js";
-import { ProductManager } from "./classes/ProductManager.js";
+import IndexRouter from "./routes/index.routes.js";
+import { Server } from "socket.io";
+
+dotenv.config()
 
 const app = express();
-const PORT = 8080;
-const productManager = new ProductManager("productos.json")
+const PORT = process.env.port
+const DB_URL = process.env.DB_URL
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
+app.use(express.static("src/public"))
 
-app.use(express.static(__dirname + "/public"));
-
-app.engine("handlebars", handlebars.engine());
-app.set("views", __dirname + "/views");
+app.engine("handlebars", handlebars.engine())
+app.set("views", "src/views");
 app.set("view engine", "handlebars");
 
-app.use("/api/products", productRouter);
-app.use("/api/cart", cartRouter);
-app.use("/", viewsRouter);
+app.use((req, res, next) => {
+  req.io = io
+  next()
+})
 
-const server = app.listen(PORT, () => {
-  console.log("servidor esta running en el puerto " + PORT);
-});
+app.use("/", IndexRouter)
 
-const socketServer = new Server(server);
+const server = app.listen(PORT, (error) => {
 
-socketServer.on("connection", (socket) => {
-  console.log("nuevo cliente conectado");
-  socket.on("addProduct", async (product) => {
-    const title = product.title;
-    const description = product.description;
-    const price = product.price;
-    const thumbnail = product.thumbnail;
-    const code = product.code;
-    const stock = product.stock;
-    try {
-      const result = await productManager.addProduct(
-        title,
-        description,
-        price,
-        thumbnail,
-        code,
-        stock
-      );
-      const allProducts = await productManager.getProducts();
-      console.log(allProducts);
-      result && socketServer.emit("updateProducts", allProducts);
-    } catch (err) {
-      console.log(err);
-    }
-  });
+  if (error) {
+    console.log(error)
+  }
 
-  socket.on("deleteProduct", async (id) => {
-    console.log(id);
-    try {
-      const result = await productManager.deleteProductById(id);
-      const allProducts = await productManager.getProducts();
-      console.log(allProducts);
-      result && socketServer.emit("updateProducts", allProducts);
-    } catch (err) {
-      console.log(err);
-    }
-  });
-});
+  console.log("servidor esta running en el puerto " + PORT)
+})
+
+const io = new Server(server)
+
+io.on("connection", (socket) => {
+	console.log("Se conecto un nuevo ususario")
+})
+
+startMongoConnection()
+	.then(() => {
+		console.log("Conectado a la base de datos")
+	})
+	.catch((err) => console.log(err))
+
+async function startMongoConnection() {
+	await mongoose.connect(DB_URL)
+}
