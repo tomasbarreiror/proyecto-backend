@@ -29,7 +29,9 @@ sendMessageBtn.addEventListener("click", async () => {
         },
         body: JSON.stringify({ user, message }),
     })
-    .then((res) => res.json())
+    .then((res) => {
+        return res.json()
+    })
     .then((data) => {
         if (data.success == false) {
             alert("No se pudo enviar el mensaje")

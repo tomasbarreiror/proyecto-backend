@@ -8,7 +8,7 @@ const IndexRouter = Router()
 
 IndexRouter.use("/api/products", ProductRouter);
 IndexRouter.use("/api/cart", CartRouter);
-IndexRouter.use("api/chat", ChatRouter)
+IndexRouter.use("/api/chat", ChatRouter)
 IndexRouter.use("/", ViewsRouter);
 
 export default IndexRouter
